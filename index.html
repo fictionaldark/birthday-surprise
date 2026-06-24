@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Kushagra</title>
+
+  <!-- Link CSS (we will upload later) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" preload="auto">
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- ================= HOME SCREEN ================= -->
+  <section id="home" class="home">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>Happy Birthday, Kushagra 🎉</h1>
+      <p class="subtitle">Three sides. One journey.</p>
+
+      <button id="musicBtn" class="music-btn">
+        ▶ Play Music
+      </button>
+
+      <p class="hint">Tap a mode to explore</p>
+
+      <div class="cards">
+        <div class="card" onclick="openMode('gym')">💪 Gym</div>
+        <div class="card" onclick="openMode('football')">⚽ Football</div>
+        <div class="card" onclick="openMode('navy')">⚓ Merchant Navy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GYM MODE ================= -->
+  <section id="gym" class="mode gym">
+    <div class="mode-content">
+      <p>"Discipline beats motivation every single day."</p>
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+  </section>
+
+  <!-- ================= FOOTBALL MODE ================= -->
+  <section id="football" class="mode football">
+    <div class="mode-content">
+      <p>"Play with heart. Win with discipline."</p>
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+  </section>
+
+  <!-- ================= NAVY MODE ================= -->
+  <section id="navy" class="mode navy">
+    <div class="mode-content">
+      <p>"The sea teaches discipline, courage, and humility."</p>
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Crafted with effort 🎧</p>
+  </footer>
+
+  <!-- Link JS (we will upload later) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
